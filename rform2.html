@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Choose your Destination</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			background: url('travel@1.jpg');
+			background-repeat: no-repeat;
+			background-position:center ;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-self: center;
+		}
+		.total{
+			background: floralwhite;
+			height: 80%;
+			width: 65%;
+			/* margin:40px 50px 20px 50px ; */
+margin-top: 270px;
+margin-left:340px;
+border: 2px solid red;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		}
+		.total:hover{
+			background-color: rgb(111, 239, 145);
+			color:aqua;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		}
+		.rows{
+			padding: 1px;
+		}
+		#rc-imageselect {
+			transform:scale(0.77);
+			-webkit-transform:scale(0.77);
+			transform-origin:0 0;
+			-webkit-transform-origin:0 0;
+		}
+		@media screen and (max-height: 575px){
+#rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;}
+}
+@media only screen and (max-width: 500px) {
+.g-recaptcha {
+transform:scale(0.77);
+transform-origin:0 0;
+}
+}
+		h1{
+			text-align: center;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			color: darkviolet;
+		}
+		label{
+			text-align: center;
+			width:500px;
+			margin-left:200px ;
+			font-weight: 30px;
+			color: darkviolet;
+			font-size: 30px;
+			
+		}
+
+		input{
+			margin-left: 10px;
+			font-size: 20px;
+		}
+		.row1 > input{
+			margin-left: 68px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			width: 30%;
+		}
+		.row2 > input{
+			margin-left: 68px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row3 > input{
+			margin-left: 100px;
+			margin-bottom: 5px;
+
+		}
+		.row4 > input{
+			margin-left: 152px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		
+		.row5 > input{
+			margin-left: 50px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row6 > input{
+			margin-left: 30px;
+			margin-bottom: 5px;
+		}
+		.row7 > input{
+			margin-left: 90px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row8 > input{
+			margin-left: 20px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row9 > input{
+			margin-left: 45px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row10 > textarea{
+			 width: 400px;
+			  height: 100px;
+			   margin-left: 110px;
+			   width: 35%;
+
+		}
+		.row11 > select{
+			margin-left: 20px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row12 > input{
+			margin-left: 95px;
+			width: 30%;
+			margin-bottom: 5px;
+		}
+		.row13 > input{
+			margin-left: 40px;
+			margin-bottom: 5px;
+		}
+		.row14 > input{
+			margin-left: 50px;
+			width: 10%;
+			margin-bottom: 5px;
+		}
+		.row15 {
+			margin-left: 90px;
+			width: 100%;
+			margin-bottom: 5px;
+			text-emphasis-color: darkviolet;
+		}
+		.row16 > input {
+			margin-left: 0px;
+			width: 30%;
+			margin-bottom: 5px;
+			color: darkviolet;
+
+		}
+		.row16{
+			color: darkviolet;
+		}
+		.row17 > input{
+			border: 1px solid black;
+/*			margin-bottom: 10px;*/
+			
+			border-radius: 30px;
+			
+		}
+		.row17{
+			border: 1px solid black;
+			width: 25%;
+			margin-left: 105px;
+			margin-bottom: 10px;
+			color: darkviolet;
+			box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;}
+		.row18 > input{
+			margin-left: 95px;
+			width: 15%;
+			margin-bottom: 5px;
+			cursor: pointer;
+
+		}
+		.g-recaptcha{
+			margin-left: 50px;
+		}
+		.music{
+			margin-left: 85px;
+		}
+		
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="total">
+		<div class="header"><h1>Choose your Destination</h1></div>
+		<div class="rows">
+			<div class="row1">
+			<label>First Name</label>
+			<input type="text" name="First Name" value="Enter First Name " required></div>
+			<div class="row2">
+			<label>Last Name</label>
+			<input type="text" name="First Last" value="Enter Last Name "></div>
+			<div class="row3">
+				<label>Gender</label>
+				<input type="radio" name="Gender" value="Male" id="radio1">
+				<span class="Gender">Male</span>
+				<input type="radio" name="Gender" value="Female" id="radio">
+				<span class="Gender">Female</span>
+			</div>
+			<div class="row4">
+			<label>Age</label>
+			<input type="number" name="Age" value="Enter your Age "></div>
+			<div class="row5">
+			<label>Date of birth</label>
+			<input type="Date" name="Date of birth" value="Enter  your Date of birth ">
+		</div>
+			<div class="row6">
+			<label>Email Address</label>
+			<input type="text" name="Email Address" value="Enter Email Address"></div>
+			<div class="row7">
+			<label>Password</label>
+			<input type="Password" name="Password" placeholder="Enter your Password min 8 characters"></div>
+			
+
+			<div class="row9">
+			<label>Contact Number</label>
+			<input type="number" name="number"  placeholder ="Enter  your number "></div>
+
+			<div class="row10">
+			<label>Address</label>
+			<textarea>Enter your Address </textarea></div><br>
+			<div class="row11">
+			<label >choose Country</label>
+			<select id="Country">
+			<option value="India">India</option>
+			<option value="Londona">London</option>
+			<option value="America">America</option>
+			<option value="Paris">Paris</option>
+			<option value="Others">Others</option>
+		</select>
+		
+		</div>
+
+			<div class="row12">
+			<label>Pin Code</label>
+			<input type="number" name="Pin Code" value="Enter  your Pin Code"></div>		
+			<div class="row18">
+				<input type="button" name="Register" value="submit" id="button" style="background-color: purple; color: whitesmoke; font-size: 20px; margin-left: 140px;">
+				<input type="button" name="Reset" value="Reset" id="button2" style="background-color: purple; color: whitesmoke; font-size: 20px; margin-left: 140px;" >
+			</div>
+
+		</div>
+		
+	</div>
+</script>
+</body>
+</html>
